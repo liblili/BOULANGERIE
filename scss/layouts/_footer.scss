@@ -1,0 +1,64 @@
+.footer {
+  background-color: var(--color-primary-dark);
+  background-image: url(../images/footer.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 32px 0;
+  position: relative;
+}
+.footer-container {
+  display: flex;
+  gap: 20px;
+}
+.footer-nav,
+.footer-adress {
+  display: flex;
+  flex-basis: 50%;
+}
+.footer-logo,
+.footer-menu {
+  flex-grow: 1;
+}
+.footer::before,
+.footer::after {
+  position: absolute;
+  bottom: 0;
+  content: '';
+  background-repeat: no-repeat;
+}
+.footer::before {
+  width: 180px;
+  height: 120px;
+  left: 0;
+  background-image: url('../images/bread-small.png');
+}
+.footer::after {
+  width: 380px;
+  height: 190px;
+  right: 0;
+  background-image: url('../images/bread-large.png');
+}
+.address-list,
+.adress-info {
+  flex-grow: 1;
+}
+.address-link {
+  color: var(--color-primary-wite);
+  font-size: 16px;
+  font-weight: 300;
+  text-decoration: none;
+}
+.address-link:hover {
+  color: var(--color-brand-normal);
+}
+.adress-icons {
+  fill: var(--color-primary-wite);
+  stroke: #465929;
+}
+.adress-icons:hover {
+  fill: var(--color-brand-light);
+}
+.address-copiright {
+  font-size: 14px;
+}

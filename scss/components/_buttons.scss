@@ -1,0 +1,22 @@
+.button {
+  
+  padding: 16px 24px;
+  color: var(--color-primary-wite);
+  font-weight: 600;
+  display: block;
+  background-color: var(--color-brand-normal);
+  border: 2px solid var(--color-brand-normal);
+  border-radius: 8px;
+  cursor: pointer;
+}
+.button:disabled {
+  color: gray;
+  background-color: lightgray;
+  border-color: currentColor;
+  cursor: not-allowed;
+}
+.button:hover {
+  color: black;
+  background-color: var(--color-brand-light);
+  
+}

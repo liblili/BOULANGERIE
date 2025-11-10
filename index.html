@@ -4,133 +4,432 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Modern bakery</title>
-    <link rel="stylesheet" href="./css/styles.css">
+    <!--<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+     rel="stylesheet">-->
+
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <header>
-      <nav>
-        <a href="/">
-          <img src="./images/logo.svg" alt="logo bakery" />
-        </a>
-        <ul>
-          <li ><a class="link" href="#tradition-section">Our traditions</a></li class="link">
-          <li ><a class="link" href="#chefs-section">Chefs</a></li class="link">
-          <li ><a class="link" href ="#format-section">Formats</a></li class="link">
-          <li ><a class="link" href="#contact-section">Contacts</a></li>
-        </ul>
-      </nav>
-      <button class="button" type="button">Request a call</button>
+      <div class="header container">
+        <div class="header__container">
+          <nav class="header__nav">
+            <a href="/">
+              <img src="./images/logo.svg" alt="logo bakery" />
+            </a>
+            <ul class="header__menu">
+              <li>
+                <a class="link" href="#tradition-section">Our traditions</a>
+              </li>
+              <li><a class="link" href="#chefs-section">Chefs</a></li>
+              <li><a class="link" href="#format-section">Formats</a></li>
+              <li><a class="link" href="#contact-section">Contacts</a></li>
+            </ul>
+          </nav>
+          <button class="button modal-btn-open header__button" type="button">
+            Request a call
+          </button>
+          <button class="header__burger menu-btn-open" type="button">
+            <svg width="32" height="32">
+              <use href="./images/sprite-icons.svg#icon-Vector"></use>
+            </svg>
+          </button>
+          <div class="mobile-menu">
+            <button class="mobile-menu__btn-close menu-btn-close" type="button">
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
     </header>
     <main>
-      <section>
-        <h1 class="hero-title"><span>Modern</span> bakery</h1>
-     
+      <section class="hero-section">
+        <div class="container">
+          <h1 class="hero-section__title"><span>Modern</span> bakery</h1>
+          <button class="button modal-btn-open hero-section__button" type="button">
+            Request a call
+          </button>
+        </div>
       </section>
-      <section id="tradition-section">
-           <ul class="advantages-list">
-          <li>High demand in the market</li>
-          <li>Доступні за бюджетом формати</li>
-          <li>Experienced management team</li>
-        </ul>
-        <h2 class="section-title">New format of tradition</h2>
-        <p>
-          <span>shop bakery</span> is a bakery that has taken all the best and
-          preserved the taste of traditional pastries and the naturalness of the
-          ingredients.
-        </p>
-        <p>
-          We work like the most famous chains—
-          <span>5 minutes and the order is ready</span>. And our bakeries have
-          stylish design and high quality service!
-        </p>
-        <img src="./images/manandbaton.jpg" alt="">
+
+      <section class="advantages-section">
+        <div class="container">
+          <h1 class="visualy-hidden">Our advantages</h1>
+          <ul class="advantages-section__list">
+            <li class="advantages-section__item">High demand in the market</li>
+            <li class="advantages-section__item">Affordable formats</li>
+            <li class="advantages-section__item">
+              Experienced management team
+            </li>
+          </ul>
+        </div>
       </section>
-      <section id="chefs-section">
-        <h2 class="section-title">Our best features <span>chef-cook</span></h2>
-        <ul>
-          <li>
-            <article>
-              <h3>Victoria</h3>
-              <p>Hello, I'm Victoria!</p>
-              <p>
-                For 10 years, I've been bringing interesting and delicious ideas
-                to life.
+
+      <section class="section tradition-section" id="tradition-section">
+        <div class="container">
+          <div class="tradition-section__container">
+            <div class="tradition-section__content">
+              <h2 class="tradition-section__title section__title">
+                A new take on traditions
+              </h2>
+              <p class="tradition-text">
+                <span class="text-bold text-brend text-uppercase"
+                  >shop bakery</span
+                >
+                is a bakery that has taken all the best and preserved the taste
+                of traditional pastries and the naturalness of the ingredients.
               </p>
-              <p>I'll bake the most delicious products for you!</p>
-            </article>
-          </li>
-          <li>
-            <article>
-              <h3 lang="fr">Alex</h3>
-              <p>Hello, I'm Alex!</p>
-              <p>
-                My experience as a pastry chef is 18 years. SHOP BEKERY is our
-                love, which we share with you every time through our pastries!
+              <p
+                class="tradition-section__text tradition-section__text--limited"
+              >
+                We work like the most famous chains—
+                <span class="text-brend text-bold"
+                  >5 minutes and the order is ready</span
+                >.
+                <br />
+                And our bakeries have stylish design and high quality service!
               </p>
-              <p>I will make a unique filling for you for any taste!</p>
-            </article>
-          </li>
-        </ul>
-      </section>
-      <section id="format-section">
-        <h2 class="section-title">Formats</h2>
-        <ul>
-          <li>
-            <article>
-              <h3>Walrus</h3>
-            </article>
-          </li>
-          <li>
-            <article>
-              <h3>Horseshoe</h3>
-            </article>
-          </li>
-          <li>
-            <article>
-              <h3>Handlebar</h3>
-            </article>
-          </li>
-        </ul>
-      </section>
-      <section id="contact-section">
-        <h2 class="section-title">Join the bakery network</h2>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.1636304352764!2d30.48869837580946!3d50.45667757159342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce637c006b2d%3A0xaf86385f19996ff0!2z0LLRg9C70LjRhtGPINCh0ZbRh9C-0LLQuNGFINCh0YLRgNGW0LvRjNGG0ZbQsiwgNTQsINCa0LjRl9CyLCDQo9C60YDQsNGX0L3QsCwgMDIwMDA!5e0!3m2!1suk!2sch!4v1758831523467!5m2!1suk!2sch"
-          width="603"
-          height="595"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
-      </section>
+            </div>
+            <img class="tradition-section__image" src="./images/manandbaton.jpg" alt="man with breads" />
+          </div>
+        </div>
+      </section> 
+
+       <section class="chefs-section section" id="chefs-section">
+        <div class="container">
+          <h2
+            class="chefs-section__title section__title section__title--centered"
+          >
+            Our best <br /><span class="text-brend-dark">cooks</span>
+          </h2>
+          <ul class="chefs-section__list">
+            <li class="chefs-section__item">
+              <article class="chef-card">
+                <img
+                  class="chef-card__photo"
+                  src="./images/victoria-chef.jpg"
+                  alt="Victoria"
+                />
+                <div>
+                  <h3 class="chef-card__title">Victoria</h3>
+
+                  <p class="chef-card__text">Hello, I'm Victoria!</p>
+                  <p class="chef-card__text">
+                    For 10 years, I've been <br />bringing interesting and
+                    delicious <br />
+                    ideas to life.
+                  </p>
+                  <p class="chef-card__text">
+                    I'll bake the most delicious <br />
+                    products for you!
+                  </p>
+                </div>
+              </article>
+            </li>
+            <li class="chefs-section__item">
+              <article class="chef-card">
+                <img
+                  class="chef-card__photo"
+                  src="./images/alex-chef.jpg"
+                  alt=""
+                />
+                <div>
+                  <h3 class="chef-card__title" lang="fr">Alex</h3>
+                  <p class="chef-card__text">Hello, I'm Alex!</p>
+                  <p class="chef-card__text">
+                    My experience as a pastry chef is 18 years. SHOP BEKERY is
+                    our love, which we share with you every time through our
+                    pastries!
+                  </p>
+                  <p class="chef-card__text">
+                    I will make a unique filling for you for any taste!
+                  </p>
+                </div>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </section> 
+
+      <!-- <section class="formats-section section" id="format-section">
+        <div class="container">
+          <h2
+            class="formats-section__title section__title section__title--centered"
+          >
+            Formats
+          </h2>
+          <div class="formats-section__container">
+            <button class="carousel-buton" type="button">
+              <svg class="carousel-arrow" width="16" height="16">
+                <use href="./images/sprite-icons.svg#icon-Arrow"></use>
+              </svg>
+            </button>
+            <ul class="formats-section__list">
+              <li class="formats-section__item">
+                <article class="format-card">
+                  <img
+                    class="format-card__img"
+                    src="./images/img1.jpg"
+                    alt="walrus card"
+                  />
+                  <h3 class="format-card__title">Walrus</h3>
+                  <div class="format-card__text">
+                    <p>Area: up to 120 m2</p>
+                    <p>Menu: expanded menu</p>
+                    <p>Staff: 2 cashiers, 2 bakers, 2 baker's assistants</p>
+                    <p>Landing place: yes</p>
+                  </div>
+                </article>
+              </li>
+              <li class="formats-section__item">
+                <article class="format-card">
+                  <img
+                    class="format-card__img"
+                    src="./images/img2.jpg"
+                    alt="horsechoe"
+                  />
+                  <h3 class="format-card__title">Horseshoe</h3>
+                  <div class="format-card__text">
+                    <p>Area: up to 25 m2</p>
+                    <p>Menu: most popular menu items</p>
+                    <p>Staff: 2 cashiers, 2 bakers, 1 baker's assistant</p>
+                    <p>Landing places: every day</p>
+                  </div>
+                </article>
+              </li>
+              <li class="formats-section__item">
+                <article class="format-card">
+                  <img
+                    class="format-card__img"
+                    src="./images/img3.jpg"
+                    alt="handlebar"
+                  />
+                  <h3 class="format-card__title">Handlebar</h3>
+                  <div class="format-card__text">
+                    <p>Area: up to 15 m2</p>
+                    <p>Menu: most popular menu items</p>
+                    <p>Staff: 1 seller, 1 baker, 1 baker's assistant</p>
+                    <p>Landing places: every day</p>
+                  </div>
+                </article>
+              </li>
+            </ul>
+            <button class="carousel-buton next" type="button">
+              <svg class="carousel-arrow" width="16" height="16">
+                <use href="./images/sprite-icons.svg#icon-Arrow"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section> -->
+
+      <!-- <section class="contact-section section" id="contact-section">
+        <div class="container">
+          <div class="contact-section__container">
+            <div class="contact-section__form">
+              <h2 class="contact-section__title section__title">
+                Join the bakery network
+              </h2>
+              <p>Fill out the form so that we can contact you!</p>
+              <form name="modal-form" autocomplete="off" novalidate>
+                <div class="contact-section__form-field input">
+                  <label class="input__label visualy-hidden" for="user-name"
+                    >Name</label
+                  >
+                  <input
+                    class="input__control"
+                    type="text"
+                    id="user-name"
+                    name="user-name"
+                    placeholder="Name"
+                    required
+                  />
+                </div>
+                <div class="contact-section__form-field input">
+                  <label class="input__label visualy-hidden" for="user-tel"
+                    >Telephone</label
+                  >
+                  <input
+                    class="input__control"
+                    type="tel"
+                    id="user-tel"
+                    name="user-tel"
+                    placeholder="Telephone"
+                    pattern="^\+?[0-9]{12}"
+                    required
+                  />
+                </div>
+                <div class="contact-section__form-field input">
+                  <label class="input__label visualy-hidden" for="user-email"
+                    >Email</label
+                  >
+                  <input
+                    class="input__control"
+                    type="email"
+                    id="user-email"
+                    name="user-email"
+                    placeholder="Email"
+                    required
+                  />
+                </div>
+                <div class="contact-section__form-field input">
+                  <label class="input__label"  for="ages">Please select your age categorie</label>
+                  <select
+                    class="input__control"
+                    id="ages"
+                    name="user-age"
+                    required
+                  >
+                    <option></option>
+                    <option>Less than 16 yers</option>
+                    <option>16-18 years</option>
+                    <option>More than 18 years</option>
+                  </select>
+                </div>
+                <button class="contact-section__button button" type="submit">
+                  Recest a call
+                </button>
+                <p class="form-terms">
+                  By clicking the button, I agree to
+                  <a class="form-terms__link" href="">the privacy policy</a>
+                </p>
+              </form>
+            </div>
+
+            <iframe
+              class="contact-section__map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.1636304352764!2d30.48869837580946!3d50.45667757159342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce637c006b2d%3A0xaf86385f19996ff0!2z0LLRg9C70LjRhtGPINCh0ZbRh9C-0LLQuNGFINCh0YLRgNGW0LvRjNGG0ZbQsiwgNTQsINCa0LjRl9CyLCDQo9C60YDQsNGX0L3QsCwgMDIwMDA!5e0!3m2!1suk!2sch!4v1758831523467!5m2!1suk!2sch"
+              width="603"
+              height="595"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </section> -->
     </main>
-    <footer>
-      <nav>
-        <a href="/">
-          <img src="./images/logo.svg" alt="logo bakery" />
-        </a>
-        <ul>
-          <li><a href="">Our traditions</a></li>
-          <li><a href="">Chefs</a></li>
-          <li><a href="">Formats</a></li>
-          <li><a href="">Contacts</a></li>
-        </ul>
-      </nav>
-      <address>
-        <ul>
-          <li><a href="tel:+416565656565">041656566666</a></li>
-          <li><a href="mailto:lbohsjhkj.gmail">lbohsjhkj.gmail</a></li>
-          <li>
-            <a href="https://maps.app.goo.gl/yLKxY6V8446WEKjH8" target="_blank"
-              >Aproz, rue des Vergeres, 35</a
+
+    <!-- <footer class="footer">
+      <div class="container">
+        <div class="footer-container">
+          <nav class="footer-nav">
+            <div class="footer-logo">
+              <a class="footer-logo" href="/">
+                <img src="./images/logo.svg" alt="logo bakery" />
+              </a>
+            </div>
+
+            <ul class="footer-menu">
+              <li><a class="link" href="">Our traditions</a></li>
+              <li><a class="link" href="">Chefs</a></li>
+              <li><a class="link" href="">Formats</a></li>
+              <li><a class="link" href="">Contacts</a></li>
+            </ul>
+          </nav>
+          <address class="footer-adress">
+            <ul class="address-list">
+              <li>
+                <a class="address-link" href="tel:+416565656565"
+                  >041656566666</a
+                >
+              </li>
+              <li>
+                <a class="address-link" href="mailto:lbohsjhkj.gmail"
+                  >lbohsjhkj.gmail</a
+                >
+              </li>
+              <li>
+                <a
+                  class="address-link"
+                  href="https://maps.app.goo.gl/yLKxY6V8446WEKjH8"
+                  target="_blank"
+                  >Aproz, rue des Vergeres, 35</a
+                >
+              </li>
+              <li>
+                <a href="">
+                  <svg class="adress-icons" width="32" height="32">
+                    <use href="./images/sprite-icons.svg#icon-facebook"></use>
+                  </svg> </a
+                >Facebook
+              </li>
+              <li>
+                <a href="">
+                  <svg class="adress-icons" width="32" height="32">
+                    <use href="./images/sprite-icons.svg#icon-instagram"></use>
+                  </svg> </a
+                >insta
+              </li>
+            </ul>
+            <div class="address-info">
+              <a class="address-link" target="_blank">Privacy Policy</a>
+              <p class="address-copiright">&copy; 2022 Data protected</p>
+            </div>
+          </address>
+        </div>
+      </div>
+    </footer> -->
+
+    <div class="backdrop is-hidden">
+      <div class="modal">
+        <button class="modal__btn-close modal-btn-close" type="button">
+          Close
+        </button>
+        <h2>Request a call</h2>
+        <p>Leave a request and our specialist will contact you</p>
+        <form name="modal-form" autocomplete="off">
+          <div class="modal__form-field input">
+            <label class="form-label visualy-hidden" for="user-name"
+              >Name</label
             >
-          </li>
-          <li><a href=""></a>Favebook</li>
-          <li><a href=""></a>insta</li>
-        </ul>
-        <a href="" target="_blank">Privacy Policy</a>
-        <p>&copy; 2022 Data protected</p>
-      </address>
-    </footer>
+            <input
+              class="input__control"
+              type="text"
+              id="user-name"
+              name="user-name"
+              placeholder="Name"
+              required
+            />
+          </div>
+          <div class="modal__form-field input">
+            <label class="form-label visualy-hidden" for="user-tel"
+              >Telephone</label
+            >
+            <input
+              class="input__control"
+              type="tel"
+              id="user-tel"
+              name="user-tel"
+              placeholder="Telephone"
+              pattern="^\+?[0-9]{12}"
+              required
+            />
+          </div>
+          <div class="modal__form-field input">
+            <label class="form-label visualy-hidden" for="user-email"
+              >Email</label
+            >
+            <input
+              class="input__control"
+              type="email"
+              id="user-email"
+              name="user-email"
+              placeholder="Email"
+              required
+            />
+          </div>
+          <button class="modal__buton button form-button" type="submit">
+            Recest a call
+          </button>
+          <p class="form-terms">
+            By clicking the button, I agree to
+            <a class="form-terms-link" href="">the privacy policy</a>
+          </p>
+        </form>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
+    <script src="./js/mobile.js"></script>
   </body>
 </html>
