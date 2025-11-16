@@ -7,7 +7,8 @@
   border: 1px solid lightgray;
   border-radius: 16px;
   padding: 24px;
-  transition: transform  .3s;
+ 
+  overflow: hidden;
   background-image: linear-gradient(
     180deg,
     rgba(49, 38, 26, 0) 55.21%,
@@ -32,9 +33,8 @@
   font-weight: 300;
   color: var(--color-primary-wite);
 }
-&:hover{
-  transform: scale(1.05);
-}
+
+
 }
 
 

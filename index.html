@@ -8,6 +8,10 @@
      rel="stylesheet">-->
 
     <link rel="stylesheet" href="./css/main.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <header>
@@ -46,7 +50,10 @@
       <section class="hero-section">
         <div class="container">
           <h1 class="hero-section__title"><span>Modern</span> bakery</h1>
-          <button class="button modal-btn-open hero-section__button" type="button">
+          <button
+            class="button modal-btn-open hero-section__button"
+            type="button"
+          >
             Request a call
           </button>
         </div>
@@ -90,12 +97,16 @@
                 And our bakeries have stylish design and high quality service!
               </p>
             </div>
-            <img class="tradition-section__image" src="./images/manandbaton.jpg" alt="man with breads" />
+            <img
+              class="tradition-section__image"
+              src="./images/manandbaton.jpg"
+              alt="man with breads"
+            />
           </div>
         </div>
-      </section> 
+      </section>
 
-       <section class="chefs-section section" id="chefs-section">
+      <section class="chefs-section section" id="chefs-section">
         <div class="container">
           <h2
             class="chefs-section__title section__title section__title--centered"
@@ -149,81 +160,144 @@
             </li>
           </ul>
         </div>
-      </section> 
+      </section>
 
-      <!-- <section class="formats-section section" id="format-section">
+      <section class="formats-section section" id="format-section">
         <div class="container">
           <h2
             class="formats-section__title section__title section__title--centered"
           >
             Formats
           </h2>
-          <div class="formats-section__container">
-            <button class="carousel-buton" type="button">
+          <div class="formats-section__slider">
+            <button
+              class="formats-section__button carousel-buton prev"
+              type="button"
+            >
               <svg class="carousel-arrow" width="16" height="16">
                 <use href="./images/sprite-icons.svg#icon-Arrow"></use>
               </svg>
             </button>
-            <ul class="formats-section__list">
-              <li class="formats-section__item">
-                <article class="format-card">
-                  <img
-                    class="format-card__img"
-                    src="./images/img1.jpg"
-                    alt="walrus card"
-                  />
-                  <h3 class="format-card__title">Walrus</h3>
-                  <div class="format-card__text">
-                    <p>Area: up to 120 m2</p>
-                    <p>Menu: expanded menu</p>
-                    <p>Staff: 2 cashiers, 2 bakers, 2 baker's assistants</p>
-                    <p>Landing place: yes</p>
-                  </div>
-                </article>
-              </li>
-              <li class="formats-section__item">
-                <article class="format-card">
-                  <img
-                    class="format-card__img"
-                    src="./images/img2.jpg"
-                    alt="horsechoe"
-                  />
-                  <h3 class="format-card__title">Horseshoe</h3>
-                  <div class="format-card__text">
-                    <p>Area: up to 25 m2</p>
-                    <p>Menu: most popular menu items</p>
-                    <p>Staff: 2 cashiers, 2 bakers, 1 baker's assistant</p>
-                    <p>Landing places: every day</p>
-                  </div>
-                </article>
-              </li>
-              <li class="formats-section__item">
-                <article class="format-card">
-                  <img
-                    class="format-card__img"
-                    src="./images/img3.jpg"
-                    alt="handlebar"
-                  />
-                  <h3 class="format-card__title">Handlebar</h3>
-                  <div class="format-card__text">
-                    <p>Area: up to 15 m2</p>
-                    <p>Menu: most popular menu items</p>
-                    <p>Staff: 1 seller, 1 baker, 1 baker's assistant</p>
-                    <p>Landing places: every day</p>
-                  </div>
-                </article>
-              </li>
-            </ul>
-            <button class="carousel-buton next" type="button">
+            <div class="formats-section__container swiper-container">
+              <ul class="formats-section__list swiper-wrapper">
+                <li class="swiper-slide">
+                  <article class="format-card">
+                    <img
+                      class="format-card__img"
+                      src="./images/img1.jpg"
+                      alt="walrus card"
+                    />
+                    <h3 class="format-card__title">Walrus</h3>
+                    <div class="format-card__text">
+                      <p>Area: up to 120 m2</p>
+                      <p>Menu: expanded menu</p>
+                      <p>Staff: 2 cashiers, 2 bakers, 2 baker's assistants</p>
+                      <p>Landing place: yes</p>
+                    </div>
+                  </article>
+                </li>
+                <li class="swiper-slide">
+                  <article class="format-card">
+                    <img
+                      class="format-card__img"
+                      src="./images/img2.jpg"
+                      alt="horsechoe"
+                    />
+                    <h3 class="format-card__title">Horseshoe</h3>
+                    <div class="format-card__text">
+                      <p>Area: up to 25 m2</p>
+                      <p>Menu: most popular menu items</p>
+                      <p>Staff: 2 cashiers, 2 bakers, 1 baker's assistant</p>
+                      <p>Landing places: every day</p>
+                    </div>
+                  </article>
+                </li>
+                <li class="swiper-slide">
+                  <article class="format-card">
+                    <img
+                      class="format-card__img"
+                      src="./images/img3.jpg"
+                      alt="handlebar"
+                    />
+                    <h3 class="format-card__title">Handlebar</h3>
+                    <div class="format-card__text">
+                      <p>Area: up to 15 m2</p>
+                      <p>Menu: most popular menu items</p>
+                      <p>Staff: 1 seller, 1 baker, 1 baker's assistant</p>
+                      <p>Landing places: every day</p>
+                    </div>
+                  </article>
+                </li>
+                <li class="swiper-slide">
+                  <article class="format-card">
+                    <img
+                      class="format-card__img"
+                      src="./images/img1.jpg"
+                      alt="walrus card"
+                    />
+                    <h3 class="format-card__title">Walrus</h3>
+                    <div class="format-card__text">
+                      <p>Area: up to 120 m2</p>
+                      <p>Menu: expanded menu</p>
+                      <p>Staff: 2 cashiers, 2 bakers, 2 baker's assistants</p>
+                      <p>Landing place: yes</p>
+                    </div>
+                  </article>
+                </li>
+                <li class="swiper-slide">
+                  <article class="format-card">
+                    <img
+                      class="format-card__img"
+                      src="./images/img2.jpg"
+                      alt="horsechoe"
+                    />
+                    <h3 class="format-card__title">Horseshoe</h3>
+                    <div class="format-card__text">
+                      <p>Area: up to 25 m2</p>
+                      <p>Menu: most popular menu items</p>
+                      <p>Staff: 2 cashiers, 2 bakers, 1 baker's assistant</p>
+                      <p>Landing places: every day</p>
+                    </div>
+                  </article>
+                </li>
+                <li class="swiper-slide">
+                  <article class="format-card">
+                    <img
+                      class="format-card__img"
+                      src="./images/img3.jpg"
+                      alt="handlebar"
+                    />
+                    <h3 class="format-card__title">Handlebar</h3>
+                    <div class="format-card__text">
+                      <p>Area: up to 15 m2</p>
+                      <p>Menu: most popular menu items</p>
+                      <p>Staff: 1 seller, 1 baker, 1 baker's assistant</p>
+                      <p>Landing places: every day</p>
+                    </div>
+                  </article>
+                </li>
+              </ul>
+              <div class="pagination">
+                <span> class="pagination__button" </span>
+                <span> class="pagination__button" </span>
+                <span> class="pagination__button" </span>
+                <span> class="pagination__button" </span>
+              </div>
+            </div>
+
+            <button
+              class="formats-section__button carousel-buton next"
+              type="button"
+            >
               <svg class="carousel-arrow" width="16" height="16">
                 <use href="./images/sprite-icons.svg#icon-Arrow"></use>
               </svg>
             </button>
           </div>
         </div>
-      </section> -->
+      </section>
 
-      <!-- <section class="contact-section section" id="contact-section">
+      <section class="contact-section section" id="contact-section">
         <div class="container">
           <div class="contact-section__container">
             <div class="contact-section__form">
@@ -272,20 +346,7 @@
                     required
                   />
                 </div>
-                <div class="contact-section__form-field input">
-                  <label class="input__label"  for="ages">Please select your age categorie</label>
-                  <select
-                    class="input__control"
-                    id="ages"
-                    name="user-age"
-                    required
-                  >
-                    <option></option>
-                    <option>Less than 16 yers</option>
-                    <option>16-18 years</option>
-                    <option>More than 18 years</option>
-                  </select>
-                </div>
+
                 <button class="contact-section__button button" type="submit">
                   Recest a call
                 </button>
@@ -299,77 +360,77 @@
             <iframe
               class="contact-section__map"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.1636304352764!2d30.48869837580946!3d50.45667757159342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce637c006b2d%3A0xaf86385f19996ff0!2z0LLRg9C70LjRhtGPINCh0ZbRh9C-0LLQuNGFINCh0YLRgNGW0LvRjNGG0ZbQsiwgNTQsINCa0LjRl9CyLCDQo9C60YDQsNGX0L3QsCwgMDIwMDA!5e0!3m2!1suk!2sch!4v1758831523467!5m2!1suk!2sch"
-              width="603"
-              height="595"
               allowfullscreen=""
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
             ></iframe>
           </div>
         </div>
-      </section> -->
+      </section>
     </main>
 
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="container">
-        <div class="footer-container">
-          <nav class="footer-nav">
-            <div class="footer-logo">
-              <a class="footer-logo" href="/">
+        <div class="footer__container">
+          <nav class="footer__nav">
+            <div class="footer__logo">
+              <a class="footer__logo" href="/">
                 <img src="./images/logo.svg" alt="logo bakery" />
               </a>
             </div>
 
-            <ul class="footer-menu">
+            <ul class="footer__menu">
               <li><a class="link" href="">Our traditions</a></li>
               <li><a class="link" href="">Chefs</a></li>
               <li><a class="link" href="">Formats</a></li>
               <li><a class="link" href="">Contacts</a></li>
             </ul>
           </nav>
-          <address class="footer-adress">
-            <ul class="address-list">
+          <address class="footer__adress">
+            <ul class="footer__address-list">
               <li>
-                <a class="address-link" href="tel:+416565656565"
+                <a class="footer__address-link" href="tel:+416565656565"
                   >041656566666</a
                 >
               </li>
               <li>
-                <a class="address-link" href="mailto:lbohsjhkj.gmail"
+                <a class="footer__address-link" href="mailto:lbohsjhkj.gmail"
                   >lbohsjhkj.gmail</a
                 >
               </li>
               <li>
                 <a
-                  class="address-link"
-                  href="https://maps.app.goo.gl/yLKxY6V8446WEKjH8"
+                  class="footer__address-link"
+                  href="https://maps.app.goo.gl/8wTUC1soQBSfVE5U8"
                   target="_blank"
-                  >Aproz, rue des Vergeres, 35</a
+                >
+                  Ivano-Frankivs'k, Sichovykh Stril'tsiv St, 54</a
                 >
               </li>
               <li>
                 <a href="">
-                  <svg class="adress-icons" width="32" height="32">
+                  <svg class="footer__adress-icons" width="32" height="32">
                     <use href="./images/sprite-icons.svg#icon-facebook"></use>
                   </svg> </a
-                >Facebook
+                >
               </li>
               <li>
                 <a href="">
-                  <svg class="adress-icons" width="32" height="32">
+                  <svg class="footer__adress-icons" width="32" height="32">
                     <use href="./images/sprite-icons.svg#icon-instagram"></use>
-                  </svg> </a
-                >insta
+                  </svg> </a>
               </li>
             </ul>
-            <div class="address-info">
-              <a class="address-link" target="_blank">Privacy Policy</a>
-              <p class="address-copiright">&copy; 2022 Data protected</p>
+            <div class="footer__address-info">
+              <a class="footer__address-link" target="_blank">Privacy Policy</a>
+              <p class="footer__address-copiright">
+                &copy; 2022 Data protected
+              </p>
             </div>
           </address>
         </div>
       </div>
-    </footer> -->
+    </footer>
 
     <div class="backdrop is-hidden">
       <div class="modal">
@@ -429,7 +490,9 @@
         </form>
       </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="./js/modal.js"></script>
+    <script src="./js/formats-slider.js"></script>
     <script src="./js/mobile.js"></script>
   </body>
 </html>

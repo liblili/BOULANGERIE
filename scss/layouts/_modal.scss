@@ -6,7 +6,7 @@
   left: 0;
   background-color: rgb(0, 0, 0, 0.5);
   display: flex;
-  padding: 20px 0;
+  padding: 20px ;
   align-items: center;
   justify-content: center;
   transition: opacity .4s, visibility .4s;
@@ -15,6 +15,7 @@
   visibility: hidden;
   pointer-events: none;
   
+  
 }
 }
 .modal{
@@ -22,11 +23,14 @@
   max-width: 880px;
   height: 100%;
   max-height: 880px;
-  padding: 128px;
+  padding: 48px;
   background-color: var(--color-primary-wite);
   border-radius: 32px;
   position: relative;
   overflow-y: auto;
+    @media screen and (min-width: $bp-tablet) {
+       padding: 128px;
+    }
   &__btn-close{
   position: absolute;
   top: 40px;
